@@ -1,0 +1,9 @@
+<div class="${data.className}" role="alert">
+    <invoke function="data.renderBody(out)" if="data.renderBody"/>
+    <div else-if="data.message">
+        ${data.message}
+    </div>
+    <div else>
+        (no nested content!)
+    </div>
+</div>
